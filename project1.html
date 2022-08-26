@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script type="text/javascript" src="floating-1.12.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="assets/ico.ico"/>
     <title>Portafolio: Proyecto 1</title>
   </head>
   <body>
@@ -21,17 +25,17 @@
       <img src="assets/animation.gif" alt="lost!" />
     </div>
     <div class="desktop-content">
-      <header>
+      <header id="top">
         <h1 id="nav-title">Ale</h1>
         <nav>
           <ul>
-            <li>
-              <a href="project1_dark.html"><i class="fa fa-adjust"></i></a>
-            </li>
+            <!-- <li>
+            <a href="index_dark.html"><i class="fa fa-adjust"></i></a>
+          </li> -->
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
             <li><a href="assets/cv.pdf" download target="_blank">CV</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#about">Sobre mi</a></li>
             <li>
               <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
                 ><i class="fa fa-envelope-open"></i
@@ -40,7 +44,7 @@
           </ul>
         </nav>
       </header>
-      <section class="project">
+      <section class="project" id="proyecto">
         <div class="project-container">
           <div class="project-info">
             <h1>Proyecto 1: Wicked Problems</h1>
@@ -50,26 +54,22 @@
               legalmente en España?
             </p>
             <div class="center">
-              <a><i class="fa fa-chevron-left"></i></a>
               <button class="button">
-                <a href="https://youtu.be/t-pzTy93ziQ" target="_blank"
-                  >Video prototype</a
-                >
+                <a href="#soluciontxt">Video prototype</a>
               </button>
-              <a href="project2.html"><i class="fa fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
       </section>
       <section class="imgProject">
         <div>
-          <img src="assets/studies.png" alt="Wicked Project" />
+          <img src="assets/project1/studies.png" alt="Wicked Project" />
         </div>
       </section>
-      <section class="explanation">
+      <section class="explanation" data-aos="fade-up">
         <div class="explanation-container">
           <div class="explanation-info">
-            <h1>Sobre la solución</h1>
+            <h1>Sobre el Proyecto</h1>
             <p>
               StudiEs es una app que ayuda a los extranjeros a aventurarse a
               estudiar en España, que nunca han pasado por el proceso de
@@ -79,41 +79,94 @@
               estos nuevos usuarios a sumergirse en una nueva cultura, idioma,
               etc.
             </p>
+            <hr />
+            <ul>
+              <li>
+                <h6>Duración</h6>
+                <p>10 días</p>
+              </li>
+              <li>
+                <h6>Rol en el proyecto</h6>
+                <p>UX/UI Designer</p>
+              </li>
+            </ul>
           </div>
+          <hr />
+          <div class="explanation-img" id="research" data-aos="fade-up">
+            <h1>¿Cómo organizamos nuestro trabajo usando el método Agile?</h1>
+            <img src="assets/project1/agile.png" />
+            <img src="assets/project1/lista.png" />
+          </div>
+        </div>
+      </section>
+      <section class="research" data-aos="fade-up">
+        <div class="researchinterviews-img">
+          <img src="assets/project1/interviews.png" />
+        </div>
+        <div class="researchencuestas-img">
+          <img src="assets/project1/Encuestas.png" />
         </div>
       </section>
       <section class="card">
         <div class="card-container">
           <div class="card-info">
-            <h6>Tus documentos</h6>
-            <p>
-              Tendrás en la app los requerimientos que necesitas, podrás llevar
-              un orden tanto de los que ya tienes como los que aún no.
-            </p>
+            <h6>86%</h6>
+            <p>Necesitó ayuda de abogados familiares o amigos.</p>
           </div>
         </div>
         <div class="card-container">
           <div class="card-info">
-            <h6>Tus eventos</h6>
-            <p>
-              Podrás acceder a los eventos de la comunidad y sumergirte en la
-              cultura haciendo actividades como ir de picnic, jugar juegos de
-              mesa, etc.
-            </p>
+            <h6>52%</h6>
+            <p>Consideró que fue muy difícil encontrar información</p>
           </div>
         </div>
-        <div class="card-container">
-          <div class="card-info">
-            <h6>Tus amigos</h6>
-            <p>
-              Mantente conectado con la comunidad para salir de dudas y
-              para tener excelentes amigos que te acompañarán en todo el
-              proceso.
-            </p>
+      </section>
+      <section class="explanation" id="user" data-aos="fade-up">
+        <div class="explanation-container">
+          <div class="explanation-info">
+            <h6>Las necesidades de nuestro User</h6>
+            <div class="explanationuser-img">
+              <img src="assets/project1/user.png" />
+            </div>
           </div>
         </div>
       </section>
       <section class="explanation">
+        <div class="explanation-container">
+          <div class="explanation-info">
+            <h6>MoSCoW</h6>
+            <p>
+              Kukaramákara es un restaurante de comida Dominicana, ubicado a
+              unos pasos de la plaza Legazpi en Madrid, que se dedica a preparar
+              platillos muy tradicionales y que entre sus objetivos está vender
+              a todo tipo de usuarios tanto en persona como online, y a su vez
+              que dar a conocer su marca físicamente y en web. Después de hacer
+              una investigación exhaustiva nos encontramos que la página web
+              tenía varios inconvenientes que debíamos solucionar.
+            </p>
+            <div class="explanationuser-img">
+              <img src="assets/project1/moscow.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solucion" id="solution" data-aos="fade-up">
+        <div class="solucion-img">
+          <img src="assets/project1/pantallasstudies.png" />
+        </div>
+        <h1 id="soluciontxt">Video del prototipo</h1>
+        <video
+          id="video"
+          autoplay=""
+          loop=""
+          controls=""
+          width="640"
+          height="480"
+        >
+          <source type="video/mp4" src="assets/project1/studies.mov" />
+        </video>
+      </section>
+      <section class="explanation" data-aos="fade-up">
         <div class="explanation-container">
           <div class="explanation-info">
             <h1>Mi artículo de Medium</h1>
@@ -122,18 +175,53 @@
               target="_blank"
               ><img
                 class="medium-image"
-                src="assets/mediumStudies.png"
+                src="assets/project1/mediumStudies.png"
                 alt="My article"
             /></a>
           </div>
         </div>
       </section>
-      <div class="footer-img">
-        <img src="assets/image-footer-project1.png" alt="ideas" />
+      <div class="footer-img" id="about">
+        <img src="assets/project1/image-footer-project1.png" alt="ideas" />
       </div>
       <footer class="footer">
         <h6>©Ale 2022</h6>
       </footer>
     </div>
+    <div id="floatdiv">
+      <ul>
+        <li><a href="#top">El proyecto</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#user">Nuestro User</a></li>
+        <li><a href="#solution">Solución</a></li>
+        <li>
+          <a><i class="fa fa-chevron-left"></i></a>
+          <a href="project2.html"><i class="fa fa-chevron-right"></i></a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      floatingMenu.add("floatdiv", {
+        targetRight: 10,
+        targetBottom: 10,
+        snap: true,
+      });
+    </script>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500
+        );
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

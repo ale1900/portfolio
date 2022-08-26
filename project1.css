@@ -37,14 +37,21 @@ header a {
 }
 
 header a:hover {
-  color: #31cfc9;
+  color: #6F00FF;
 }
 
-.project-container,
+.project-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .explanation-container {
   width: 60%;
   margin: 0 auto;
-  padding-bottom: 80px;
+}
+
+.png img{
+  width: 30%;
 }
 
 .project {
@@ -79,7 +86,7 @@ header a:hover {
 }
 
 .button {
-  background: #31cfc9;
+  background: #9747FF;
   border-radius: 30px;
   width: 156px;
   height: 52px;
@@ -87,7 +94,7 @@ header a:hover {
 }
 
 button:hover {
-  background-color: #48eae3;
+  background-color: #6F00FF;
 }
 
 .button a {
@@ -99,28 +106,35 @@ button:hover {
   text-decoration: none;
 }
 
-.fa-chevron-left {
+ .fa-chevron-left {
   color: #f0f0f0;
+  padding-right: 70px;
 }
 
 .fa-chevron-right {
-  color: #31cfc9;
+  color: #9747FF;
+  padding-left: 70px;
 }
 
-.imgProject {
-  background-color: #f1f9f8;
+#soluciontxt{
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  color: #373737;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .imgProject img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
 }
 
 .explanation {
-  display: flex;
-  align-items: center;
   margin-top: 80px;
 }
 
@@ -131,6 +145,33 @@ button:hover {
   font-size: 36px;
   color: #373737;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.explanation-img h1 {
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  color: #373737;
+  padding-top: 50px;
+  text-align: center;
+}
+
+h6 {
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  color: #373737;
+  text-align: center;
+}
+
+.explanation li{
+  list-style: none;
+  display: flex;
+  display: inline-block;
+  padding: 20px;
 }
 
 .explanation-info p {
@@ -145,15 +186,57 @@ button:hover {
   text-align: justify;
 }
 
+.explanation-img img{
+  width: 100%;
+}
+
+.explanationuser-img img{
+  width: 100%;
+}
+
+.explanationuser-img{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.research {
+  text-align: center;
+}
+
+.researchinterviews-img img{
+  width: 70%;
+}
+
+.solucion {
+  text-align: center;
+}
+
+.solucion-img img{
+  width: 100%;
+}
+
+.researchinterviews-img{
+  background-color: #F9F4FF;
+}
+
+.researchencuestas-img img{
+  width: 70%;
+}
+
+.card-title h1{
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  color: #373737;
+}
+
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   flex-direction: row;
   gap: 24px;
-  background-color: #f1f9f8;
-  height: 450px;
 }
 
 .card-container {
@@ -161,15 +244,14 @@ button:hover {
   background-color: white;
   border-radius: 20px;
   padding: 60px;
-  box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.2),
-    0 6px 20px 0 rgba(35, 35, 35, 0.19);
+  box-shadow: 0px 5px 6px rgba(67, 73, 97, 0.08);
 }
 
 .card-info h6 {
   font-family: "Futura", sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 32px;
   color: #373737;
   text-align: center;
 }
@@ -184,7 +266,6 @@ button:hover {
   line-height: 32px;
   color: #707070;
   text-align: center;
-  text-align: justify;
 }
 
 .medium-image {
@@ -194,9 +275,10 @@ button:hover {
 
 .footer-img img {
   display: block;
+  padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
 }
 
 .footer {
@@ -204,7 +286,7 @@ button:hover {
   bottom: 0;
   width: 100%;
   height: 48px;
-  background-color: #31cfc9;
+  background-color: #9747FF;
   color: white;
   text-align: center;
 }
@@ -247,3 +329,37 @@ button:hover {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+#floatdiv{
+  position:absolute;  
+  width:200px;
+  height:150px;
+  top:10px;
+  right:10px;  
+  padding:16px;
+  background:#FFFFFF;  
+  border:1px solid #9747FF;
+  box-shadow: 1px 1px 13px rgba(67, 73, 97, 0.25);
+  border-radius: 20px;
+  z-index:100;
+}
+
+#floatdiv li a{
+  font-family: "Futura";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #707070;
+  text-decoration: none;
+}
+
+#floatdiv li{
+  padding: 8px;
+  text-align: center;
+}
+
+#floatdiv li a:hover{
+  color: #6F00FF;
+}
+
+
