@@ -22,6 +22,10 @@ hr {
   color: #373737;
 }
 
+span{
+  color: #6F00FF;
+}
+
 header li {
   list-style: none;
   display: inline-block;

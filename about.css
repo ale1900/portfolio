@@ -1,12 +1,6 @@
 @import url("assets/Futura.ttc");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
 
-body {
-  background-image: url("assets/background.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 header {
   display: flex;
   justify-content: flex-end;
@@ -26,6 +20,10 @@ hr {
   font-weight: 500;
   font-size: 40px;
   color: #373737;
+}
+
+span{
+  color: #6F00FF;
 }
 
 header li {
@@ -100,6 +98,7 @@ img {
 
 button:hover {
   background-color: #6F00FF;
+  color: white;
 }
 .button a {
   font-family: "Futura";
