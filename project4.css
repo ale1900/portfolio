@@ -22,6 +22,10 @@ hr {
   color: #373737;
 }
 
+.float, .float2{
+  display: none;
+}
+
 #mySidenav{
   display: none;
 }
@@ -32,6 +36,10 @@ hr {
  }
 
  #mySidenav{
+  display: block;
+}
+
+.float, .float2{
   display: block;
 }
 

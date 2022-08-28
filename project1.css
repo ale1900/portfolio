@@ -26,10 +26,18 @@ hr {
   display: none;
 }
 
+.float, .float2{
+  display: none;
+}
+
 @media (max-width: 1120px){
  .navbar{
   display: none;
  }
+
+ .float, .float2{
+  display: block;
+}
 
  #mySidenav{
   display: block;
