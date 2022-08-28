@@ -105,6 +105,23 @@ hr {
 	margin-top:22px;
 }
 
+.float2{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#c3c3c3;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float2{
+	margin-top:22px;
+}
+
 }
 
 span{
