@@ -17,38 +17,44 @@
     <title>Proyecto 4</title>
   </head>
   <body>
-    <div class="mobile-content">
-      <h1>
-        Oops! Could you take a look at my portfolio on desktop? I would
-        appreciate it. Thank you!
-      </h1>
-      <img src="assets/animation.gif" alt="lost!" />
+    <header>
+      <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-links"><a href="index.html">Home</a></li>
+          <li class="navbar-links"><a href="portfolio.html">Portafolio</a></li>
+          <li class="navbar-links"><a href="cv.html">CV</a></li>
+          <li class="navbar-links"><a href="about.html">Sobre mi</a></li>
+          <li class="navbar-links">
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="navbar-links">
+            <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
+              ><i class="fa fa-envelope-open"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="index.html" id="about">Home</a>
+      <a href="portfolio.html" id="blog">Portfolio</a>
+      <a href="cv.html" id="projects">CV</a>
+      <a href="about.html" id="contact">Sobre mi</a>
+      <a
+        id="linkedin"
+        href="https://www.linkedin.com/in/alejandrapedroza/"
+        target="_blank"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <a id="mail" href="mailto:alejandrita1900@gmail.com?subject=Questions"
+        ><i class="fa fa-envelope-open"></i
+      ></a>
     </div>
-    <div class="desktop-content">
-      <header id="top">
-        <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
-        <nav>
-          <ul>
-            <!-- <li>
-            <a href="index_dark.html"><i class="fa fa-adjust"></i></a>
-          </li> -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portafolio</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="about.html">Sobre mi</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/alejandrapedroza/"
-                  target="_blank"><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            <li>
-              <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
-                ><i class="fa fa-envelope-open"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <section class="project" id="proyecto">
         <div class="project-container">
           <div class="project-info">
@@ -244,7 +250,6 @@
       <footer class="footer">
         <h6>©Ale 2022</h6>
       </footer>
-    </div>
     <div id="floatdiv">
       <ul>
         <li><a href="#top">El proyecto</a></li>

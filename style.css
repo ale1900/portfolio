@@ -1,51 +1,79 @@
 @import url("assets/Futura.ttc");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
 
-/*
-.mobile-content {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .mobile-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .desktop-content {
-    display: none;
-  }
-}
-
-.mobile-content h1 {
-  font-family: "Futura", sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.2;
-  color: #373737;
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-*/
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background: url(assets/index/bg.png)no-repeat;
+body {
+  background: url(assets/index/bg.png) no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.container{
+#mySidenav {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .navbar {
+    display: none;
+  }
+
+  #mySidenav a {
+    margin-top: 70px;
+    color: #ffffff;
+    font-family: "Futura", sans-serif;
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  #mySidenav a:hover,
+  #mySidenav a:active {
+    left: 0;
+    background-color: #6f00ff;
+  }
+
+  #about {
+    top: 20px;
+    background-color: #9747ff;
+  }
+
+  #blog {
+    top: 80px;
+    background-color: #9747ff; /* Blue */
+  }
+
+  #projects {
+    top: 140px;
+    background-color: #9747ff; /* Red */
+  }
+
+  #contact {
+    top: 200px;
+    background-color: #9747ff; /* Light Black */
+  }
+
+  #linkedin {
+    top: 260px;
+    background-color: #9747ff; /* Light Black */
+  }
+
+  #mail {
+    top: 320px;
+    background-color: #9747ff; /* Light Black */
+  }
+}
+
+.container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -58,7 +86,7 @@ body{
   padding-right: 900px;
 }
 
-.container img{
+.container img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -67,7 +95,7 @@ body{
   object-fit: contain;
 }
 
-.container h2{
+.container h2 {
   font-family: "Futura", sans-serif;
   z-index: 1;
   position: relative;
@@ -76,7 +104,7 @@ body{
   font-weight: 900;
 }
 
-.container h2 span{
+.container h2 span {
   font-family: "hind", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -87,9 +115,18 @@ body{
   bottom: 0;
   width: 100%;
   height: 48px;
-  background-color: #9747FF;
+  background-color: #9747ff;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 1120px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .footer h6 {
@@ -106,7 +143,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 50px;
-
 }
 
 hr {
@@ -123,8 +159,8 @@ hr {
   color: #373737;
 }
 
-span{
-  color: #6F00FF;
+span {
+  color: #6f00ff;
 }
 
 header li {
@@ -142,9 +178,9 @@ header a {
 }
 
 header a:hover {
-  color: #6F00FF;
+  color: #6f00ff;
 }
 
-.button{
+.button {
   z-index: 1;
 }

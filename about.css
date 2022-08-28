@@ -22,8 +22,123 @@ hr {
   color: #373737;
 }
 
+#mySidenav{
+  display: none;
+}
+
+@media (max-width: 1120px){
+ .navbar{
+  display: none;
+ }
+
+ #mySidenav{
+  display: block;
+}
+
+ #mySidenav a {
+  margin-top: 70px;
+  color: #ffffff;
+  font-family: "Futura", sans-serif;
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px; 
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover, #mySidenav a:active{
+  left: 0;
+  background-color: #6F00FF;
+}
+
+#about {
+  top: 20px;
+  background-color: #9747ff;
+}
+
+#blog {
+  top: 80px;
+  background-color: #9747ff; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #9747ff; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #9747ff /* Light Black */
+}
+
+#linkedin {
+  top: 260px;
+  background-color: #9747ff /* Light Black */
+}
+
+#mail {
+  top: 320px;
+  background-color: #9747ff /* Light Black */
+}
+
+.about-container{
+  display: none;
+}
+
+div{
+  margin-top: 50px;
+}
+
+div.card{
+  display: block;
+  box-shadow: 0px 5.92088px 7.10506px rgba(67, 73, 97, 0.08);
+  max-width: 300px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.card p{
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 25px;
+  text-align: center;
+  color: #707070;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card h3{
+  font-family: "Futura", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  color: #373737;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+}
+
+.card{
+  display: none;
+}
+
 span{
-  color: #6F00FF;
+  color: #9747ff;
 }
 
 header li {
@@ -131,32 +246,3 @@ button:hover {
   padding-top: 16px;
 }
 
-.mobile-content {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .mobile-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .desktop-content {
-    display: none;
-  }
-}
-
-.mobile-content h1 {
-  font-family: "Futura", sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.2;
-  color: #373737;
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}

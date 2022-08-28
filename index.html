@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="image/jpg" href="assets/ico.ico"/>
+    <link rel="icon" type="image/jpg" href="assets/ico.ico" />
     <script type="text/javascript" src="floating-1.12.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
     <title>Home</title>
@@ -18,21 +18,20 @@
   <body>
     <header>
       <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
-      <nav>
+      <nav class="navbar">
         <ul>
-          <!-- <li>
-            <a href="index_dark.html"><i class="fa fa-adjust"></i></a>
-          </li> -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portafolio</a></li>
-          <li><a href="cv.html">CV</a></li>
-            <li><a href="about.html">Sobre mi</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/alejandrapedroza/"
-                  target="_blank"><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-          <li>
+          <li class="navbar-links"><a href="index.html">Home</a></li>
+          <li class="navbar-links"><a href="portfolio.html">Portafolio</a></li>
+          <li class="navbar-links"><a href="cv.html">CV</a></li>
+          <li class="navbar-links"><a href="about.html">Sobre mi</a></li>
+          <li class="navbar-links">
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="navbar-links">
             <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
               ><i class="fa fa-envelope-open"></i
             ></a>
@@ -40,8 +39,25 @@
         </ul>
       </nav>
     </header>
+    <section id="mySidenav" class="sidenav">
+      <a href="index.html" id="about">Home</a>
+      <a href="portfolio.html" id="blog">Portfolio</a>
+      <a href="cv.html" id="projects">CV</a>
+      <a href="about.html" id="contact">Sobre mi</a>
+      <a
+        id="linkedin"
+        href="https://www.linkedin.com/in/alejandrapedroza/"
+        target="_blank"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <a id="mail" href="mailto:alejandrita1900@gmail.com?subject=Questions"
+        ><i class="fa fa-envelope-open"></i
+      ></a>
+    </section>
     <div class="container">
-      <a href="portfolio.html"><img src="assets/index/0.png" class="button" data-value="10" alt="" /></a>
+      <a href="portfolio.html"
+        ><img src="assets/index/0.png" class="button" data-value="10" alt=""
+      /></a>
       <img src="assets/index/1.png" class="object" data-value="10" alt="" />
       <img src="assets/index/2.png" class="object" data-value="6" alt="" />
       <img src="assets/index/3.png" class="object" data-value="4" alt="" />
@@ -70,11 +86,17 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".auto-type", {
-        strings: ["Graphic Designer", "UX/UI Designer", "Coding", "Sleeping", ":)"],
+        strings: [
+          "Graphic Designer",
+          "UX/UI Designer",
+          "Coding",
+          "Sleeping",
+          ":)",
+        ],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
-      })
+      });
     </script>
   </body>
 </html>
