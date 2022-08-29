@@ -40,13 +40,14 @@ hr {
   color: #ffffff;
   font-family: "Futura", sans-serif;
   position: absolute;
-  left: -100px;
+  left: -80px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
   text-decoration: none;
   font-size: 20px; 
   border-radius: 0 5px 5px 0;
+  text-align: right;
 }
 
 #mySidenav a:hover, #mySidenav a:active{
@@ -61,27 +62,27 @@ hr {
 
 #blog {
   top: 80px;
-  background-color: #9747ff; /* Blue */
+  background-color: #9747ff; 
 }
 
 #projects {
   top: 140px;
-  background-color: #9747ff; /* Red */
+  background-color: #9747ff; 
 }
 
 #contact {
   top: 200px;
-  background-color: #9747ff /* Light Black */
+  background-color: #9747ff 
 }
 
 #linkedin {
   top: 260px;
-  background-color: #9747ff /* Light Black */
+  background-color: #9747ff 
 }
 
 #mail {
   top: 320px;
-  background-color: #9747ff /* Light Black */
+  background-color: #9747ff 
 }
 
 .about-container{

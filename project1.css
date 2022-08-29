@@ -48,13 +48,14 @@ hr {
   color: #ffffff;
   font-family: "Futura", sans-serif;
   position: absolute;
-  left: -100px;
+  left: -80px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
   text-decoration: none;
   font-size: 20px; 
   border-radius: 0 5px 5px 0;
+  text-align: right;
 }
 
 #mySidenav a:hover, #mySidenav a:active{
