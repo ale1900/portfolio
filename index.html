@@ -39,11 +39,11 @@
         </ul>
       </nav>
     </header>
-    <section id="mySidenav" class="sidenav">
-      <li class="navbar-links"><a href="index.html">Home</a></li>
-          <li class="navbar-links"><a href="portfolio.html">Portafolio</a></li>
-          <li class="navbar-links"><a href="cv.html">CV</a></li>
-          <li class="navbar-links"><a href="about.html">Sobre mi</a></li>
+    <div id="mySidenav" class="sidenav">
+      <a href="index.html" id="about"><i class="fa fa-home"></i></a>
+      <a href="portfolio.html" id="blog"><i class="fa fa-book"></i></a>
+      <a href="cv.html" id="projects"><i class="fa fa-suitcase"></i></a>
+      <a href="about.html" id="contact"><i class="fa fa-user"></i></a>
       <a
         id="linkedin"
         href="https://www.linkedin.com/in/alejandrapedroza/"
@@ -53,20 +53,25 @@
       <a id="mail" href="mailto:alejandrita1900@gmail.com?subject=Questions"
         ><i class="fa fa-envelope-open"></i
       ></a>
-    </section>
+    </div>
     <div class="container">
-      <a href="portfolio.html"
+      <!--<a href="portfolio.html"
         ><img src="assets/index/0.png" class="button" data-value="10" alt=""
-      /></a>
+      /></a>-->
       <img src="assets/index/1.png" class="object" data-value="10" alt="" />
-      <img src="assets/index/2.png" class="object" data-value="6" alt="" />
+      <img id="no" src="assets/index/2.png" class="object" data-value="6" alt="" />
       <img src="assets/index/3.png" class="object" data-value="4" alt="" />
-      <img src="assets/index/4.png" class="object" data-value="-6" alt="" />
+      <img id="no" src="assets/index/4.png" class="object" data-value="-6" alt="" />
       <img src="assets/index/5.png" class="object" data-value="8" alt="" />
-      <img src="assets/index/6.png" class="object" data-value="-4" alt="" />
+      <img id="no" src="assets/index/6.png" class="object" data-value="-4" alt="" />
       <img src="assets/index/7.png" class="object" data-value="5" alt="" />
       <img src="assets/index/9.png" class="object" data-value="-5" alt="" />
     </div>
+    <div>
+      <a href="portfolio.html" class="float">
+        Mi portfolio
+        </a>
+      </div>
     <footer class="footer">
       <h6>©Ale 2022</h6>
     </footer>

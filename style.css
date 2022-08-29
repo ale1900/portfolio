@@ -22,19 +22,27 @@ body {
     display: none;
   }
 
-  #mySidenav a {
+  #mySidenav{
+    display: block;
+  }
+  
+   #mySidenav a {
     margin-top: 70px;
     color: #ffffff;
     font-family: "Futura", sans-serif;
     position: absolute;
-    left: -80px;
+    left: -60px;
     transition: 0.3s;
     padding: 15px;
     width: 100px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px; 
     border-radius: 0 5px 5px 0;
     text-align: right;
+  }
+
+  .container{
+    z-index: -1;
   }
 
   #mySidenav a:hover,
@@ -155,8 +163,7 @@ hr {
   margin-right: auto;
   font-family: "Futura", sans-serif;
   font-style: italic;
-  font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   color: #373737;
 }
 
@@ -182,6 +189,25 @@ header a:hover {
   color: #6f00ff;
 }
 
-.button {
+.float{
+	position:absolute;
+	width: 198px;
+  height: 52px;
+	bottom:15%;
+	background-color:#9747FF;
+  left: 30%;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 0px 16px 50px rgba(182, 119, 255, 0.47);
   z-index: 1;
+}
+
+a.float {
+  text-decoration: none;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 16px 30px;
 }
