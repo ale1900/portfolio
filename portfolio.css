@@ -162,28 +162,6 @@ header a:hover {
   }
 }
 
-.button {
-  background: #31cfc9;
-  border-radius: 30px;
-  width: 156px;
-  height: 52px;
-  border: none;
-  margin: 0 auto;
-}
-
-button:hover {
-  background-color: #48eae3;
-}
-
-.button a {
-  font-family: "Futura";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
-
 .project-container {
   width: 60%;
   margin: 0 auto;
