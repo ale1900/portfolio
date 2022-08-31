@@ -508,3 +508,20 @@ h6 {
   color: #6F00FF;
 }
 
+#linear-wipe {
+  background: linear-gradient(to right, #7101FF 20%, #6100FF 40%, #FF008A 60%, #FFC83A 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}

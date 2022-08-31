@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="cv.css" />
+    <link rel="stylesheet" href="challenge2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>About me</title>
+    <script type="text/javascript" src="floating-1.12.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="assets/ico.ico" />
+    <title>Challenge 2</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
       <nav class="navbar">
         <ul>
@@ -52,22 +56,43 @@
         ><i class="fa fa-envelope-open"></i
       ></a>
     </div>
-    <section class="about-container">
-      <div class="about">
-        <div class="about-info">
-          <iframe src="assets/CV.pdf" title="CV Alejandra Pedroza Medina">
-          </iframe>
-          <div class="center">
-            <button class="button">
-              <a href="portfolio.html">Mi portfolio</a>
-            </button>
-          </div>
+    <section class="project">
+      <div class="project-container">
+        <div class="project-info">
+          <h1>Customizable</h1>
+          <p>
+            En este challenge nos dieron 45 minutos para elaborar algún producto
+            que se pudiera modificar al gusto del usuario.
+          </p>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0QXXnLnT08FvlXtyV56VYY%2FUI-Activities%3Fpage-id%3D29%253A67%26node-id%3D29%253A68%26viewport%3D472%252C167%252C0.21%26scaling%3Dscale-down%26starting-point-node-id%3D29%253A68"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
     <footer class="footer">
       <h6>©Ale 2022</h6>
     </footer>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500
+        );
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".auto-type", {
