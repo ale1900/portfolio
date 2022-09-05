@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="assets/ico.ico" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-links">
+            <a href="portfolio.html"><i class="fa fa-language"></i></a>
+          </li>
+          <li class="navbar-links"><a href="index_english.html">Home</a></li>
+          <li class="navbar-links"><a href="portfolio_english.html">Portfolio</a></li>
+          <li class="navbar-links"><a href="cv_english.html">cv</a></li>
+          <li class="navbar-links"><a href="about_english.html">About me</a></li>
+          <li class="navbar-links" id="linear-wipe">
+            <a href="ui_english.html">ui</a>
+          </li>
+          <li class="navbar-links">
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/?locale=en_US"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="navbar-links">
+            <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
+              ><i class="fa fa-envelope-open"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="index_english.html" id="about"><i class="fa fa-home"></i></a>
+      <a href="portfolio_english.html" id="blog"><i class="fa fa-book"></i></a>
+      <a href="cv_english.html" id="projects"><i class="fa fa-suitcase"></i></a>
+      <a href="about_english.html" id="contact"><i class="fa fa-user"></i></a>
+      <a
+        id="linkedin"
+        href="https://www.linkedin.com/in/alejandrapedroza/?locale=en_US"
+        target="_blank"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <a id="mail" href="mailto:alejandrita1900@gmail.com?subject=Questions"
+        ><i class="fa fa-envelope-open"></i
+      ></a>
+    </div>
+    <section class="welcome">
+      <div class="welcome-container">
+        <div class="welcome-info">
+          <h1>Here I keep my projects</h1>
+          <p>
+            These are my projects as UX/UI Designer, they are ordered
+            chronologically.<br> Scroll down!
+          </p>
+          <div class="center">
+            <img src="assets/scroll.gif" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="project-container" data-aos="fade-right">
+        <div class="project-info">
+          <h1>Wicked Problems</h1>
+          <p>
+            How can we help foreign students to find all the information about
+            the documents they need to study legally in Spain?
+          </p>
+          <button class="button">
+            <a href="project1_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="project-container" data-aos="fade-left">
+        <div class="project-info">
+          <h1>E-commerce redesign</h1>
+          <p>
+            We redesigned a website for a local restaurant in which our main
+            objective was both to attract new customers and to maintain
+            recurring ones.
+          </p>
+          <button class="button">
+            <a href="project2_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="project-container" data-aos="fade-right">
+        <div class="project-info">
+          <h1>Add a feature</h1>
+          <p>
+            How can we help users improve their experience in this popular app
+            with a great new feature?
+          </p>
+          <button class="button">
+            <a href="project3_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="project-container" data-aos="fade-left">
+        <div class="project-info">
+          <h1>Finance & Insurance</h1>
+          <p>Why and how should we teach children about finances?</p>
+          <button class="button">
+            <a href="project4_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="project-container" data-aos="fade-right">
+        <div class="project-info">
+          <h1>Pastry entrepreneurs</h1>
+          <p>
+            How can we help a pastry chef who is going to start his own
+            business, that he does not know what to buy or where to
+            start?
+          </p>
+          <button class="button">
+            <a href="project5_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h6>©Ale 2022</h6>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Graphic Designer",
+          "UX/UI Designer",
+          "Coding",
+          "Sleeping",
+          ":)",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

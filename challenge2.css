@@ -84,6 +84,11 @@ hr {
   background-color: #9747ff /* Light Black */
 }
 
+#ui {
+  top: 380px;
+  background-color: #9747ff; /* Light Black */
+}
+
 }
 
 span{
