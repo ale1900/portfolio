@@ -10,12 +10,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script type="text/javascript" src="floating-1.12.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" type="image/jpg" href="assets/ico.ico"/>
+    <link rel="icon" type="image/jpg" href="assets/ico.ico" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
       <nav class="navbar">
         <ul>
@@ -26,7 +28,9 @@
           <li class="navbar-links"><a href="portfolio.html">Portfolio</a></li>
           <li class="navbar-links"><a href="cv.html">cv</a></li>
           <li class="navbar-links"><a href="about.html">Sobre mí</a></li>
-          <li class="navbar-links" id="linear-wipe"><a href="ui.html">ui</a></li>
+          <li class="navbar-links" id="linear-wipe">
+            <a href="ui.html">ui</a>
+          </li>
           <li class="navbar-links">
             <a
               href="https://www.linkedin.com/in/alejandrapedroza/"
@@ -47,6 +51,7 @@
       <a href="portfolio.html" id="blog"><i class="fa fa-book"></i></a>
       <a href="cv.html" id="projects"><i class="fa fa-suitcase"></i></a>
       <a href="about.html" id="contact"><i class="fa fa-user"></i></a>
+      <a href="ui.html" id="ui"><i class="fa fa-paint-brush"></i></a>
       <a
         id="linkedin"
         href="https://www.linkedin.com/in/alejandrapedroza/"
@@ -57,99 +62,134 @@
         ><i class="fa fa-envelope-open"></i
       ></a>
     </div>
-      <section class="welcome">
-        <div class="welcome-container">
-          <div class="welcome-info">
-            <h1>Aquí guardo mis proyectos</h1>
-            <p>
-              Estos son mis proyectos como UX/UI Designer, están ordenados
-              cronológicamente.<br>¡Scroll down!
-            </p>
-            <div class="center">
-              <img src="assets/scroll.gif" />
-            </div>
+    <section class="project" id="proyecto">
+      <div class="project-container">
+        <div class="project-info">
+          <h1>Aquí guardo mis proyectos</h1>
+          <p>
+            Estos son mis proyectos como UX/UI Designer, están ordenados
+            cronológicamente. <br>
+            ¡Scroll down!
+          </p>
+          <div class="center">
+            <img src="assets/scroll.gif" />
           </div>
         </div>
-      </section>
-      <section class="projects">
-        <div class="project-container" data-aos="fade-right">
-          <div class="project-info">
-            <h1>Wicked Problems</h1>
-            <p>
-              ¿Cómo podemos ayudar a estudiantes extranjeros a encontrar toda la
-              información sobre los documentos que necesitan para estudiar
-              legalmente en España?
-            </p>
-            <button class="button">
-              <a href="project1.html">Leer más</a>
-            </button>
-          </div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-container">
+        <img class="card-image" src="assets/Project4.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Finance & Insurance</h6>
+          <p>
+            ¿Por qué y cómo debemos enseñarle a los niños sobre las finanzas?
+            Buscar la forma más adecuada.
+          </p>
         </div>
-        <div class="project-container" data-aos="fade-left">
-          <div class="project-info">
-            <h1>E-commerce redesign</h1>
-            <p>
-              Rediseñamos una web para un restaurante local en la que nuestro
-              principal objetivo era tanto atraer nuevos clientes como mantener
-              los recurrentes.
-            </p>
-            <button class="button">
-              <a href="project2.html">Leer más</a>
-            </button>
-          </div>
+        <div class="center">
+          <button class="button">
+            <a href="project4.html">Leer más</a>
+          </button>
         </div>
-        <div class="project-container" data-aos="fade-right">
-          <div class="project-info">
-            <h1>Add a feature</h1>
-            <p>
-              ¿Como podemos ayudar a los usuarios a mejorar su experiencia en
-              esta popular aplicación con una nueva gran feature?
-            </p>
-            <button class="button">
-              <a href="project3.html">Leer más</a>
-            </button>
-          </div>
+      </div>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project1.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Wicked Problems</h6>
+          <p>
+            ¿Cómo podemos ayudar a estudiantes extranjeros a encontrar toda la
+            información sobre los documentos que necesitan para estudiar
+            legalmente en España?
+          </p>
         </div>
-        <div class="project-container" data-aos="fade-left">
-          <div class="project-info">
-            <h1>Finance & Insurance</h1>
-            <p>
-              ¿Por qué y cómo debemos enseñarle a los niños sobre las finanzas?
-            </p>
-            <button class="button">
-              <a href="project4.html">Leer más</a>
-            </button>
-          </div>
+        <div class="center">
+          <button class="button">
+            <a href="project1.html">Leer más</a>
+          </button>
         </div>
-        <div class="project-container" data-aos="fade-right">
-          <div class="project-info">
-            <h1>Pastry entrepreneurs</h1>
-            <p>
-              ¿Cómo podemos ayudar a un pastelero que va a emprender en su
-              propio negocio y que no sabe qué debe adquirir ni por donde
-              comenzar?
-            </p>
-            <button class="button">
-              <a href="project5.html">Leer más</a>
-            </button>
-          </div>
+      </div>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project2.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>E-commerce redesign</h6>
+          <p>
+            Rediseñamos una web para un restaurante local en la que nuestro
+            principal objetivo era tanto atraer nuevos clientes como mantener
+            los recurrentes.
+          </p>
         </div>
-      </section>
-      <footer class="footer">
-        <h6>©Ale 2022</h6>
-      </footer>
+        <div class="center">
+          <button class="button">
+            <a href="project2.html">Leer más</a>
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project3.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Add a feature</h6>
+          <p>
+            ¿Como podemos ayudar a los usuarios a mejorar su experiencia en esta
+            popular aplicación con una nueva gran feature?
+          </p>
+        </div>
+        <div class="center">
+          <button class="button">
+            <a href="project3.html">Leer más</a>
+          </button>
+        </div>
+      </div>
+      <div id="last" class="card-container">
+        <img class="card-image" src="assets/Project5.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Pastry entrepreneurs</h6>
+          <p>
+            ¿Cómo podemos ayudar a un pastelero que va a emprender en su propio
+            negocio y que no sabe qué debe adquirir ni por donde comenzar?
+          </p>
+        </div>
+        <div class="center">
+          <button class="button">
+            <a href="project5.html">Leer más</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h6>©Ale 2022</h6>
+    </footer>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500
+        );
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".auto-type", {
-        strings: ["Graphic Designer", "UX/UI Designer", "Coding", "Sleeping", ":)"],
+        strings: [
+          "Graphic Designer",
+          "UX/UI Designer",
+          "Coding",
+          "Gaming",
+          "Sleeping",
+          ":)",
+        ],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
-      })
+      });
     </script>
   </body>
 </html>

@@ -10,12 +10,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script type="text/javascript" src="floating-1.12.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/jpg" href="assets/ico.ico" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
       <nav class="navbar">
         <ul>
@@ -49,6 +51,9 @@
       <a href="portfolio_english.html" id="blog"><i class="fa fa-book"></i></a>
       <a href="cv_english.html" id="projects"><i class="fa fa-suitcase"></i></a>
       <a href="about_english.html" id="contact"><i class="fa fa-user"></i></a>
+      <li class="navbar-links" id="linear-wipe">
+        <a href="ui.html">ui</a>
+      </li>
       <a
         id="linkedin"
         href="https://www.linkedin.com/in/alejandrapedroza/?locale=en_US"
@@ -59,9 +64,9 @@
         ><i class="fa fa-envelope-open"></i
       ></a>
     </div>
-    <section class="welcome">
-      <div class="welcome-container">
-        <div class="welcome-info">
+    <section class="project" id="proyecto">
+      <div class="project-container">
+        <div class="project-info">
           <h1>Here I keep my projects</h1>
           <p>
             These are my projects as UX/UI Designer, they are ordered
@@ -73,61 +78,78 @@
         </div>
       </div>
     </section>
-    <section class="projects">
-      <div class="project-container" data-aos="fade-right">
-        <div class="project-info">
-          <h1>Wicked Problems</h1>
+    <section class="card">
+      <div class="card-container">
+        <img class="card-image" src="assets/Project4.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Finance & Insurance</h6>
           <p>
-            How can we help foreign students to find all the information about
-            the documents they need to study legally in Spain?
+            Why and how should we teach children about finances?
           </p>
-          <button class="button">
-            <a href="project1_english.html">Read more</a>
-          </button>
         </div>
-      </div>
-      <div class="project-container" data-aos="fade-left">
-        <div class="project-info">
-          <h1>E-commerce redesign</h1>
-          <p>
-            We redesigned a website for a local restaurant in which our main
-            objective was both to attract new customers and to maintain
-            recurring ones.
-          </p>
-          <button class="button">
-            <a href="project2_english.html">Read more</a>
-          </button>
-        </div>
-      </div>
-      <div class="project-container" data-aos="fade-right">
-        <div class="project-info">
-          <h1>Add a feature</h1>
-          <p>
-            How can we help users improve their experience in this popular app
-            with a great new feature?
-          </p>
-          <button class="button">
-            <a href="project3_english.html">Read more</a>
-          </button>
-        </div>
-      </div>
-      <div class="project-container" data-aos="fade-left">
-        <div class="project-info">
-          <h1>Finance & Insurance</h1>
-          <p>Why and how should we teach children about finances?</p>
+        <div class="center">
           <button class="button">
             <a href="project4_english.html">Read more</a>
           </button>
         </div>
       </div>
-      <div class="project-container" data-aos="fade-right">
-        <div class="project-info">
-          <h1>Pastry entrepreneurs</h1>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project1.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Wicked Problems</h6>
+          <p>
+            How can we help foreign students to find all the information about
+            the documents they need to study legally in Spain?
+          </p>
+        </div>
+        <div class="center">
+          <button class="button">
+            <a href="project1_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project2.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>E-commerce redesign</h6>
+          <p>
+            We redesigned a website for a local restaurant in which our main
+            objective was both to attract new customers and to maintain
+            recurring ones.
+          </p>
+        </div>
+        <div class="center">
+          <button class="button">
+            <a href="project2_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img class="card-image" src="assets/Project3.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Add a feature</h6>
+          <p>
+            How can we help users improve their experience in this popular app
+            with a great new feature?
+          </p>
+        </div>
+        <div class="center">
+          <button class="button">
+            <a href="project3_english.html">Read more</a>
+          </button>
+        </div>
+      </div>
+      <div id="last" class="card-container">
+        <img class="card-image" src="assets/Project5.png" alt="Wicked Problems">
+        <div class="card-info">
+          <h6>Pastry entrepreneurs</h6>
           <p>
             How can we help a pastry chef who is going to start his own
             business, that he does not know what to buy or where to
             start?
           </p>
+        </div>
+        <div class="center">
           <button class="button">
             <a href="project5_english.html">Read more</a>
           </button>
@@ -137,6 +159,18 @@
     <footer class="footer">
       <h6>©Ale 2022</h6>
     </footer>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500
+        );
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -148,6 +182,7 @@
           "Graphic Designer",
           "UX/UI Designer",
           "Coding",
+          "Gaming",
           "Sleeping",
           ":)",
         ],
