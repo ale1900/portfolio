@@ -270,6 +270,11 @@ h6 {
   box-shadow: 0px 5px 6px rgba(67, 73, 97, 0.08);
 }
 
+.card-container:hover{
+  transition: all 400ms ease-out;
+  box-shadow: 0px 5px 6px #9747ff84;
+}
+
 #last {
   margin-bottom: 80px;
 }
