@@ -14,7 +14,7 @@
     <script type="text/javascript" src="jquery.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/jpg" href="assets/ico.ico" />
-    <title>Portfolio</title>
+    <title>Mis trabajos</title>
   </head>
   <body>
     <header id="top">
@@ -25,11 +25,8 @@
             <a href="portfolio_english.html"><i class="fa fa-language"></i></a>
           </li>
           <li class="navbar-links"><a href="index.html">Home</a></li>
-          <li class="navbar-links"><a href="portfolio.html">Portfolio</a></li>
-          <li class="navbar-links"><a href="cv.html">cv</a></li>
+          <li class="navbar-links" id="linear-wipe"><a href="portfolio.html">Mis trabajos</a></li>
           <li class="navbar-links"><a href="about.html">Sobre mí</a></li>
-          <li class="navbar-links" id="linear-wipe">
-            <a href="ui.html">ui</a>
           </li>
           <li class="navbar-links">
             <a
@@ -49,9 +46,7 @@
     <div id="mySidenav" class="sidenav">
       <a href="index.html" id="about"><i class="fa fa-home"></i></a>
       <a href="portfolio.html" id="blog"><i class="fa fa-book"></i></a>
-      <a href="cv.html" id="projects"><i class="fa fa-suitcase"></i></a>
       <a href="about.html" id="contact"><i class="fa fa-user"></i></a>
-      <a href="ui.html" id="ui"><i class="fa fa-paint-brush"></i></a>
       <a
         id="linkedin"
         href="https://www.linkedin.com/in/alejandrapedroza/"
@@ -156,6 +151,49 @@
         </div>
       </div>
     </section>
+    <hr class="division">
+    <section class="project" id="ui">
+      <div class="project-container">
+        <div class="project-info">
+          <h1>UI Challenges</h1>
+          <p>
+            Algunos challenges que realizamos en tiempos cortos para practicar.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-container" id="ui-challenge">
+       <div class="card-info">
+        <a href="challenge1.html"><h6>Boarding Pass</h6></a>
+        </div>
+      </div>
+      <div class="card-container" id="ui-challenge">
+        <div class="card-info">
+          <a href="challenge2.html"><h6>Customizable</h6></a>
+        </div>
+      </div>
+      <div class="card-container" id="ui-challenge">
+        <div class="card-info">
+          <a href="challenge3.html"><h6>Music Player</h6></a>
+        </div>
+      </div>
+      <div class="card-container" id="ui-challenge">
+        <div class="card-info">
+          <a href="challenge4.html"><h6>Weather app</h6></a>
+        </div>
+      </div>
+      <div class="card-container" id="ui-challenge">
+        <div class="card-info">
+          <a href="challenge5.html"><h6>Onboarding</h6></a>
+        </div>
+      </div>
+      <div id="last" class="card-container" id="ui-challenge">
+        <div class="card-info">
+          <a href="challenge6.html"><h6>Error 404</h6></a>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <h6>©Ale 2022</h6>
     </footer>
@@ -179,8 +217,8 @@
     <script>
       var typed = new Typed(".auto-type", {
         strings: [
+        "UX/UI Designer",
           "Graphic Designer",
-          "UX/UI Designer",
           "Coding",
           "Gaming",
           "Sleeping",

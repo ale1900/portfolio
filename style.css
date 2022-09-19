@@ -61,23 +61,18 @@ body {
     background-color: #9747ff; /* Blue */
   }
 
-  #projects {
-    top: 140px;
-    background-color: #9747ff; /* Red */
-  }
-
   #contact {
-    top: 200px;
+    top: 140px;
     background-color: #9747ff; /* Light Black */
   }
 
   #linkedin {
-    top: 260px;
+    top: 200px;
     background-color: #9747ff; /* Light Black */
   }
 
   #mail {
-    top: 320px;
+    top: 260px;
     background-color: #9747ff; /* Light Black */
   }
 }

@@ -65,28 +65,18 @@ hr {
     background-color: #9747ff; /* Blue */
   }
 
-  #projects {
-    top: 140px;
-    background-color: #9747ff; /* Red */
-  }
-
   #contact {
-    top: 200px;
+    top: 140px;
     background-color: #9747ff; /* Light Black */
   }
 
   #linkedin {
-    top: 260px;
+    top: 200px;
     background-color: #9747ff; /* Light Black */
   }
 
   #mail {
-    top: 320px;
-    background-color: #9747ff; /* Light Black */
-  }
-
-  #ui {
-    top: 380px;
+    top: 260px;
     background-color: #9747ff; /* Light Black */
   }
 }
@@ -132,6 +122,14 @@ header a:hover {
   align-items: center;
   margin-top: 250px;
   margin-bottom: 80px;
+}
+
+#ui{
+  margin-top: 100px;
+}
+
+.division{
+  width: 55%;
 }
 
 .project-info h1 {
@@ -247,6 +245,16 @@ h6 {
   gap: 24px;
 }
 
+#ui-challenge{
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#ui-challenge a{
+  text-decoration: none;
+}
+
 .card-image{
   width: 100%;
   margin-bottom: 30px;
@@ -288,6 +296,12 @@ h6 {
 
 #last{
   margin-bottom: 80px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#last a{
+  text-decoration: none;
 }
 
 .card-info h6 {

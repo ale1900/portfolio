@@ -64,28 +64,18 @@ hr {
   background-color: #9747ff; /* Blue */
 }
 
-#projects {
-  top: 140px;
-  background-color: #9747ff; /* Red */
-}
-
 #contact {
-  top: 200px;
-  background-color: #9747ff /* Light Black */
+  top: 140px;
+  background-color: #9747ff; /* Light Black */
 }
 
 #linkedin {
-  top: 260px;
-  background-color: #9747ff /* Light Black */
+  top: 200px;
+  background-color: #9747ff; /* Light Black */
 }
 
 #mail {
-  top: 320px;
-  background-color: #9747ff /* Light Black */
-}
-
-#ui {
-  top: 380px;
+  top: 260px;
   background-color: #9747ff; /* Light Black */
 }
 

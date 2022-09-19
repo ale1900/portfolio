@@ -61,27 +61,22 @@ hr {
 
 #blog {
   top: 80px;
-  background-color: #9747ff; 
-}
-
-#projects {
-  top: 140px;
-  background-color: #9747ff; 
+  background-color: #9747ff; /* Blue */
 }
 
 #contact {
-  top: 200px;
-  background-color: #9747ff 
+  top: 140px;
+  background-color: #9747ff; /* Light Black */
 }
 
 #linkedin {
-  top: 260px;
-  background-color: #9747ff 
+  top: 200px;
+  background-color: #9747ff; /* Light Black */
 }
 
 #mail {
-  top: 320px;
-  background-color: #9747ff 
+  top: 260px;
+  background-color: #9747ff; /* Light Black */
 }
 
 .about-container{
