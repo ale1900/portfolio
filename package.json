@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "floating-1.12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ale1900/portfolio.git"
+  },
+  "author": "Ale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ale1900/portfolio/issues"
+  },
+  "homepage": "https://github.com/ale1900/portfolio#readme"
+}
