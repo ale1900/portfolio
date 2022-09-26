@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="floating-1.12.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+      integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="assets/ico.ico" />
+    <title>About me</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1 id="nav-title">Ale <span class="auto-type"></span></h1>
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-links">
+            <a href="ui.html"><i class="fa fa-language"></i></a>
+          </li>
+          <li class="navbar-links"><a href="index.html">Home</a></li>
+          <li class="navbar-links" id="linear-wipe">
+            <a href="portfolio.html">Mis trabajos</a>
+          </li>
+          <li class="navbar-links"><a href="ui.html">Sobre mí</a></li>
+          <li class="navbar-links"><a href="assets/cv.pdf" target="_blank">cv</a></li>
+          <li class="navbar-links">
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="navbar-links">
+            <a href="mailto:alejandrita1900@gmail.com?subject=Questions"
+              ><i class="fa fa-envelope-open"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+      <div class="bg-white max-w-md w-90 p-6 text-center rounded-2xl">
+        <img class="mb-8" src="img/Frame1.png" alt="" />
+        <div class="inline-flex space-x-2">
+          <button
+            class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold w-32 h-14 border-b-4 border-yellow-500 hover:border-yellow-400 rounded-2xl"
+          >
+            <a href="assets/CV Ingles.pdf" target="_blank">My CV</a>
+          </button>
+          <button
+            class="bg-purple-400 hover:bg-purple-500 text-white font-bold w-32 h-14 border-b-4 border-purple-500 hover:border-purple-400 rounded-2xl"
+          >
+            <a href="portfolio_english.html">My works</a>
+          </button>
+          <button
+            class="bg-pink-400 hover:bg-pink-500 text-white font-bold w-32 h-14 border-b-4 border-pink-500 hover:border-pink-400 rounded-2xl"
+          >
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/"
+              target="_blank"
+              >My LinkedIn</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <canvas>
+    </canvas>
+    </div>
+  </body>
+  <script src="ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [
+        "UX/UI Designer",
+        "Graphic Designer",
+        "Coding",
+        "Gaming",
+        "Sleeping",
+        ":)",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
+</html>

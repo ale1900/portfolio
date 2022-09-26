@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="ui.css" />
     <link
+      href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script type="text/javascript" src="floating-1.12.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+      integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/jpg" href="assets/ico.ico" />
-    <title>Challenges</title>
+    <title>About me</title>
   </head>
   <body>
     <header id="top">
@@ -22,15 +32,14 @@
       <nav class="navbar">
         <ul>
           <li class="navbar-links">
-            <a href="ui_english.html"><i class="fa fa-language"></i></a>
+            <a href="ui_spanish.html"><i class="fa fa-language"></i></a>
           </li>
-          <li class="navbar-links"><a href="index.html">Home</a></li>
-          <li class="navbar-links"><a href="portfolio.html">Portfolio</a></li>
-          <li class="navbar-links"><a href="cv.html">cv</a></li>
-          <li class="navbar-links"><a href="about.html">Sobre mí</a></li>
+          <li class="navbar-links"><a href="index_english.html">Home</a></li>
           <li class="navbar-links" id="linear-wipe">
-            <a href="ui.html">ui</a>
+            <a href="portfolio_english.html">My works</a>
           </li>
+          <li class="navbar-links"><a href="ui.html">About me</a></li>
+          <li class="navbar-links"><a href="assets/CV Ingles.pdf" target="_blank">cv</a></li>
           <li class="navbar-links">
             <a
               href="https://www.linkedin.com/in/alejandrapedroza/"
@@ -46,134 +55,52 @@
         </ul>
       </nav>
     </header>
-    <div id="mySidenav" class="sidenav">
-      <a href="index.html" id="about"><i class="fa fa-home"></i></a>
-      <a href="portfolio.html" id="blog"><i class="fa fa-book"></i></a>
-      <a href="cv.html" id="projects"><i class="fa fa-suitcase"></i></a>
-      <a href="about.html" id="contact"><i class="fa fa-user"></i></a>
-      <a href="ui.html" id="ui"><i class="fa fa-paint-brush"></i></a>
-      <a
-        id="linkedin"
-        href="https://www.linkedin.com/in/alejandrapedroza/"
-        target="_blank"
-        ><i class="fa fa-linkedin"></i
-      ></a>
-      <a id="mail" href="mailto:alejandrita1900@gmail.com?subject=Questions"
-        ><i class="fa fa-envelope-open"></i
-      ></a>
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+      <div class="bg-white max-w-md w-90 p-6 text-center rounded-2xl">
+        <img class="mb-8" src="img/Frame1.png" alt="" />
+        <div class="inline-flex space-x-2">
+          <button
+            class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold w-32 h-14 border-b-4 border-yellow-500 hover:border-yellow-400 rounded-2xl"
+          >
+            <a href="assets/CV Ingles.pdf" target="_blank">My CV</a>
+          </button>
+          <button
+            class="bg-purple-400 hover:bg-purple-500 text-white font-bold w-32 h-14 border-b-4 border-purple-500 hover:border-purple-400 rounded-2xl"
+          >
+            <a href="portfolio_english.html">My works</a>
+          </button>
+          <button
+            class="bg-pink-400 hover:bg-pink-500 text-white font-bold w-32 h-14 border-b-4 border-pink-500 hover:border-pink-400 rounded-2xl"
+          >
+            <a
+              href="https://www.linkedin.com/in/alejandrapedroza/"
+              target="_blank"
+              >My LinkedIn</a
+            >
+          </button>
+        </div>
+      </div>
     </div>
-    <section class="project" id="proyecto">
-      <div class="project-container">
-        <div class="project-info">
-          <h1>UI Challenges</h1>
-          <p>
-            Algunos challenges que realizamos en tiempos cortos para practicar.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="card">
-      <div class="card-container">
-        <div class="card-info">
-          <h6>Boarding Pass</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge1.html">Challenge 1</a>
-          </button>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card-info">
-          <h6>Customizable</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge2.html">Challenge 2</a>
-          </button>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card-info">
-          <h6>Music Player</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge3.html">Challenge 3</a>
-          </button>
-        </div>
-      </div>
-      <div id="last" class="card-container">
-        <div class="card-info">
-          <h6>Weather app</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge4.html">Challenge 4</a>
-          </button>
-        </div>
-      </div>
-      <div id="last" class="card-container">
-        <div class="card-info">
-          <h6>Onboarding</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge5.html">Challenge 5</a>
-          </button>
-        </div>
-      </div>
-      <div id="last2" class="card-container">
-        <div class="card-info">
-          <h6>Error 404</h6>
-          <p></p>
-        </div>
-        <div class="center">
-          <button class="button">
-            <a href="challenge6.html">Challenge 6</a>
-          </button>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <h6>©Ale 2022</h6>
-    </footer>
-    <script>
-      $(document).on("click", 'a[href^="#"]', function (event) {
-        event.preventDefault();
-
-        $("html, body").animate(
-          {
-            scrollTop: $($.attr(this, "href")).offset().top,
-          },
-          500
-        );
-      });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed(".auto-type", {
-        strings: [
-          "Graphic Designer",
-          "UX/UI Designer",
-          "Coding",
-          "Gaming",
-          "Sleeping",
-          ":)",
-        ],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true,
-      });
-    </script>
+    <div class="center">
+      <canvas>
+    </canvas>
+    </div>
   </body>
+  <script src="ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [
+        "UX/UI Designer",
+        "Graphic Designer",
+        "Coding",
+        "Gaming",
+        "Sleeping",
+        ":)",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
 </html>
